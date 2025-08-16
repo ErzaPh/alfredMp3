@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>elijah woods | Mp3 Player</title>
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    .artist-header {
+      background: url("./pictures/cover.jpeg") center/cover no-repeat;
+      padding: 60px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      height: 350px;
+    }
+
+    .artist-name {
+      font-size: 5rem;
+      font-weight: bold;
+    }
+
+    .listeners {
+      margin-top: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .controls {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    /* .play-btn {
+      background-color: #1DB954;
+      border: none;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      font-size: 24px;
+      color: #000;
+      cursor: pointer;
+    } */
+
+    .playlist {
+      padding: 20px 40px;
+      padding-bottom: 100px;
+    }
+
+    .playlist h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px 8px;
+      text-align: left;
+    }
+
+    th {
+      color: #b3b3b3;
+      font-weight: normal;
+      font-size: 0.9rem;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    tr:hover {
+      background-color: #1a1a1a;
+    }
+
+    .song-num {
+      width: 40px;
+      text-align: center;
+      color: #b3b3b3;
+    }
+
+    .song-thumb {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+
+    .song-info {
+        display: flex;
+      align-items: center; /* this centers title vertically with thumbnail */
+      margin: 15px 0;
+    }
+
+    .song-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .duration {
+      color: #b3b3b3;
+    }
+    
+    audio {
+        display: block;
+        margin-top: 8px; /* optional spacing */
+        width: 100%;
+        max-width: 600px; /* optional limit */
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #181818;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid #2a2a2a;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="artist-header">
+    <div class="artist-name">elijah woods</div>
+    <div class="listeners">3,389,124 monthly listeners</div>
+    <div class="controls">
+    </div>
+  </div>
+
+  <div class="playlist">
+    <h2>Popular</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Title</th>
+          <th>Plays</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="song-num">1</td>
+          <td>
+            <div class="song-info">
+              <img src="./pictures/247365.jfif" alt="cover" class="song-thumb">
+              <span class="song-title">24/7, 365</span>
+              
+            </div>
+            <audio controls>
+                <source src="./songs/elijah woods - 247, 365.mp3" type="audio/mpeg">
+              </audio>
+          </td>
+          <td>188,342,311</td>
+          <td class="duration">2:48</td>
+        </tr>
+        <tr>
+          <td class="song-num">2</td>
+          <td>
+            <div class="song-info">
+              <img src="./pictures/lastgirl.png" alt="cover" class="song-thumb">
+              <span class="song-title">last girl</span>
+            </div>
+            <audio controls>
+                <source src="./songs/elijah woods - last girl.mp3" type="audio/mpeg">
+              </audio>
+          </td>
+          <td>5,922,658</td>
+          <td class="duration">3:21</td>
+        </tr>
+        <tr>
+            <td class="song-num">3</td>
+            <td>
+              <div class="song-info">
+                <img src="./pictures/everything everywhere always.jpg" alt="cover" class="song-thumb">
+                <span class="song-title">everything everywhere always</span>
+              </div>
+              <audio controls>
+                <source src="./songs/elijah woods - everything everywhere always.mp3" type="audio/mpeg">
+              </audio>
+            </td>
+            <td>66,030,887</td>
+            <td class="duration">2:27</td>
+        </tr>
+        <tr>
+            <td class="song-num">4</td>
+            <td>
+              <div class="song-info">
+                <img src="./pictures/lastgirl.png" alt="cover" class="song-thumb">
+                <span class="song-title">where were going</span>
+              </div>
+              <audio controls>
+                <source src="./songs/elijah woods - where were going.mp3" type="audio/mpeg">
+              </audio>
+            </td>
+            <td>18,759,049</td>
+            <td class="duration">2:59</td>
+        </tr>
+        <tr>
+            <td class="song-num">5</td>
+            <td>
+              <div class="song-info">
+                <img src="./pictures/the way we started.jfif" alt="cover" class="song-thumb">
+                <span class="song-title">where were going</span>
+              </div>
+              <audio controls>
+                <source src="./songs/elijah woods - the way that we started.mp3" type="audio/mpeg">
+              </audio>
+            </td>
+            <td>17,887,973</td>
+            <td class="duration">3:25</td>
+        </tr>
+        <tr>
+            <td class="song-num">6</td>
+            <td>
+              <div class="song-info">
+                <img src="./pictures/couldyouloveme.jfif" alt="cover" class="song-thumb">
+                <span class="song-title">where were going</span>
+              </div>
+              <audio controls>
+                <source src="./songs/elijah woods - Could You Love Me.mp3" type="audio/mpeg">
+              </audio>
+            </td>
+            <td>4,009,449</td>
+            <td class="duration">3:58</td>
+        </tr>
+        <!-- Add more songs here... -->
+      </tbody>
+    </table>
+  </div>
+   <footer>
+    <p>🎧 Listen and Chill 🎧</p>
+  </footer>
+
+</body>
+</html>
